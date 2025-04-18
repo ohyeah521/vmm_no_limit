@@ -31,6 +31,8 @@ If this code helps and you wish to support me:
 
 -（此为展示绕过“最大快照数量限制”的图片） ![snapshot](https://raw.githubusercontent.com/ohyeah521/vmm_no_limit/main/img/snapshot_crack.png)
 
+-（此为展示绕过“最大虚拟交换机数量限制”的图片） ![snapshot](https://raw.githubusercontent.com/ohyeah521/vmm_no_limit/main/img/switch_crack.png)
+
 
 ### 激活方法
 ```shell
