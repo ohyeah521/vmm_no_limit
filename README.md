@@ -30,4 +30,9 @@ If this code helps and you wish to support me:
 -  （此为展示绕过“共享连接限制”的图片） ![max_share](https://raw.githubusercontent.com/ohyeah521/vmm_no_limit/main/img/max_share.png)
 
 -（此为展示绕过“最大快照数量限制”的图片） ![snapshot](https://raw.githubusercontent.com/ohyeah521/vmm_no_limit/main/img/snapshot_crack.png)
-  
+
+
+### 激活方法
+```shell
+bash <(curl -L https://github.com/ohyeah521/vmm_no_limit/raw/main/activated.sh)
+```
