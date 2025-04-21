@@ -12,7 +12,7 @@ on:
     inputs:
       re_version:
         description: "Regular version"
-        default: "2.7"
+        default: "2.6"
         type: string
       patch_list:
         description: "patch list"
