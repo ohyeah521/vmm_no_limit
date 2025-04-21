@@ -152,7 +152,7 @@ ARCH="$(synogetkeyvalue /var/packages/Virtualization/INFO arch)"
 SS_NAME="Virtualization-${ARCH}-${VERSION}"
 
 PATCH_FILES=(
-  "lib/libsynoccc.so"
+  "usr/lib/libsynoccc.so"
 )
 
 echo "Found ${SS_NAME}"

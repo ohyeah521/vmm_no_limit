@@ -98,8 +98,8 @@ function getOfficiallibs() {
 
 [ ! -f "${TOOL_PATH}/synoarchive" ] && synoArchive
 
-RE_VERSION="${RE_VERSION:-"2.7"}"
-PATCH_LIST="${PATCH_LIST:-"lib/libsynoccc.so"}"  
+RE_VERSION="${RE_VERSION:-"2.6"}"
+PATCH_LIST="${PATCH_LIST:-"usr/lib/libsynoccc.so"}"
 
 SS_URL="https://archive.synology.com/download/Package/Virtualization"
 VER_LIST="$(curl -skL "${SS_URL}" | grep -oP '(?<=href="/download/Package/Virtualization/)[^"]*' | awk -v ver="${RE_VERSION}" -F"-" '$1 >= ver')"
