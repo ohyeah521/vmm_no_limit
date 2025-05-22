@@ -33,14 +33,56 @@ If this code helps and you wish to support me:
 
 -（此为展示绕过“最大虚拟交换机数量限制”的图片） ![snapshot](https://raw.githubusercontent.com/ohyeah521/vmm_no_limit/main/img/switch_crack.png)
 
+---
 
 ### 激活方法
+- Online:
 ```shell
-curl -fsSL https://github.com/ohyeah521/vmm_no_limit/raw/main/activated.sh | bash
+# 普通
+curl -fsSL https://raw.githubusercontent.com/ohyeah521/vmm_no_limit/main/activated.sh | bash
+# 使用github代理(可自行更换代理, 注意结尾的/)
+export GPROXY=https://gh-proxy.com/
+curl -fsSL ${GPROXY}https://raw.githubusercontent.com/ohyeah521/vmm_no_limit/main/activated.sh | bash
+export GPROXY=
+# 使用 http(s)/socks5 代理(请自行更换代理地址)
+export CPROXY=http://username:password@192.168.20.1:7890
+curl -fsSL -x ${CPROXY:+-x ${CPROXY}} https://raw.githubusercontent.com/ohyeah521/vmm_no_limit/main/activated.sh | bash
+export CPROXY=
+```
+- Offline:
+```shell
+# 1. Download https://github.com/ohyeah521/vmm_no_limit/archive/refs/heads/main.zip
+# 2. Unload to your DSM system.
+unzip vmm_no_limit-main.zip
+cd vmm_no_limit-main
+chmod +x activated.sh
+./activated.sh 
 ```
 
+---
 ### 还原方法
 ```shell
 curl -fsSL https://github.com/ohyeah521/vmm_no_limit/raw/main/activated.sh | bash -s -- -r
+```
+```shell
+# 1. 普通
+curl -fsSL https://raw.githubusercontent.com/ohyeah521/vmm_no_limit/main/activated.sh | bash -s -- -r
+# 2. 使用github代理,(可自行更换代理, 注意结尾的/)
+export GPROXY=https://gh-proxy.com/
+curl -fsSL ${GPROXY}https://raw.githubusercontent.com/ohyeah521/vmm_no_limit/main/activated.sh | bash -s -- -r
+export GPROXY=
+# 3. 使用 http(s)/socks5 代理(请自行更换代理地址)
+export CPROXY=http://username:password@192.168.20.1:7890
+curl -fsSL ${CPROXY:+-x ${CPROXY}} https://raw.githubusercontent.com/ohyeah521/vmm_no_limit/main/activated.sh | bash -s -- -r
+export CPROXY=
+```
+- Offline:
+```shell
+# 1. Download https://github.com/ohyeah521/vmm_no_limit/archive/refs/heads/main.zip
+# 2. Unload to your DSM system.
+unzip vmm_no_limit-main.zip
+cd vmm_no_limit-main
+chmod +x activated.sh
+./activated.sh -r
 ```
 
